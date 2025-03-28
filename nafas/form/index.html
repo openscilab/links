@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+        var query_string = window.location.search;
+        var url_params = new URLSearchParams(query_string);
+        var data = url_params.get('data');
+        var survey_link = `https://docs.google.com/forms/d/e/1FAIpQLSdTckweXGhaxtbO7jkSEsYhzyoc2LBebyCdKwQGiTRERt742Q/viewform?usp=pp_url&entry.837690934=${data}`;
+        window.location.href = survey_link;
+    </script>
+</head>
+<body id="body" style="text-align: center">
+    Nafas survey form!
+</body>
+
+</html>
